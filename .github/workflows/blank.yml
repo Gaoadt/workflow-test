@@ -38,7 +38,7 @@ jobs:
         cmakeAppendedArgs: '-GNinja -DGOOGLE_TEST_DIR=googletest/googletest'
     # Runs a set of commands using the runners shell
     - name: Test
-      uses: akhtyamovpavel/ActionGtestReport
+      uses: akhtyamovpavel/ActionGtestReport@v0.0.9
       with:
         exec-path: '${{github.workspace}}/TechProgCITemplate/bin/CTestExe'
         report-path: '${{github.workspace}}/TechProgCITemplate/build/tests/test-report.xml'
