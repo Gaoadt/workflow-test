@@ -29,7 +29,7 @@ jobs:
         ls
         cd 3rdparty
         ls
-        cd googletest
+        cd /home/runner/work/workflow-test/ci_build/../3rdparty/googletest
         ls
     - name: Build
       run: echo Hello, world!
