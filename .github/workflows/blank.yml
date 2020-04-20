@@ -38,9 +38,11 @@ jobs:
         cmakeAppendedArgs: '-GNinja -DGOOGLE_TEST_DIR=googletest/googletest'
     # Runs a set of commands using the runners shell
     - name: Test
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      uses: akhtyamovpavel/ActionGtestReport
+      with:
+        exec-path: '${{github.workspace}}/TechProgCITemplate/bin/CTestExe'
+        report-path: '${{github.workspace}}/TechProgCITemplate/build/tests/test-report.xml'
+        working-directory: '${{github.workspace}}/TechProgCITemplate/build/tests/'
     # Artifact uploading step
     - name: UploadArifacts
       uses: actions/upload-artifact@v1
