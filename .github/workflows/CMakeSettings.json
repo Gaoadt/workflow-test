@@ -1,0 +1,6 @@
+"variables": [
+    {
+      "name": "GOOGLE_TEST_DIR",
+      "value": "googletest/googletest"
+      }
+  ]
