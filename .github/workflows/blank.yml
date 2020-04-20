@@ -37,6 +37,10 @@ jobs:
         buildDirectory: '${{github.workspace}}/TechProgCITemplate/build'
         cmakeAppendedArgs: '-GNinja -DGOOGLE_TEST_DIR=googletest/googletest'
     # Runs a set of commands using the runners shell
+    - name: Make dir
+      run: |
+        pwd
+        mkdir '${{github.workspace}}/TechProgCITemplate/build/tests/'
     - name: Test
       uses: akhtyamovpavel/ActionGtestReport@v0.0.9
       with:
@@ -54,5 +58,5 @@ jobs:
       with:
         name: Lib
         path: '${{github.workspace}}/TechProgCITemplate/lib'  
-    - run: find ./ test-report  
+    - run: tree
       
