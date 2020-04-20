@@ -24,6 +24,7 @@ jobs:
       with: 
         repository: 'google/googletest'
         path: '${{github.workspace}}/3rdparty/' 
+    - run: mkdir ci_build
     # Runs a single command using the runners shell
     - run: |
         ls
