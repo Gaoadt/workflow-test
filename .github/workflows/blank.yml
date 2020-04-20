@@ -36,6 +36,7 @@ jobs:
         useVcpkgToolchainFile: false
         buildDirectory: '${{github.workspace}}/TechProgCITemplate/build'
         cmakeAppendedArgs: '-GNinja -DGOOGLE_TEST_DIR=googletest'
+        buildWithCMakeArgs: '-- install'
     # Runs a set of commands using the runners shell
     - name: Make dir
       run: |
