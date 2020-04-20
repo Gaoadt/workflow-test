@@ -33,7 +33,7 @@ jobs:
         pwd
         cd /home/runner/work/workflow-test/
         pwd
-        cd /home/runner/work/workflow-test/ci_build
+        cd /home/runner/work/workflow-test/workflow-test/ci_build
         ls
     - name: Build
       run: echo Hello, world!
@@ -44,7 +44,7 @@ jobs:
         cmakeListsOrSettingsJson: CMakeListsTxtBasic
         cmakeListsTxtPath: '${{ github.workspace }}/TechProgCITemplate/CMakeLists.txt'
         useVcpkgToolchainFile: false
-        buildDirectory: '${{ runner.workspace }}/ci_build/'
+        buildDirectory: '${{ github.workspace }}/ci_build/'
         cmakeAppendedArgs: '-GNinja'
         buildWithCMakeArgs: '-DGOOGLE_TEST_DIR=googletest/googletest' 
         
