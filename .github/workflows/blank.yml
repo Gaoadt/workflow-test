@@ -25,6 +25,7 @@ jobs:
         repository: 'google/googletest'
         path: '${{github.workspace}}/3rdparty/' 
     # Runs a single command using the runners shell
+    - run: ls
     - name: Build
       run: echo Hello, world!
     
