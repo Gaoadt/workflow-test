@@ -25,16 +25,6 @@ jobs:
         repository: 'google/googletest'
         path: '${{github.workspace}}/TechProgCITemplate/3rdparty/' 
     - run: mkdir ci_build
-    # Runs a single command using the runners shell
-    - run: |
-        ls
-        cd 3rdparty
-        ls
-        pwd
-        cd /home/runner/work/workflow-test/
-        pwd
-        cd /home/runner/work/workflow-test/workflow-test/ci_build
-        ls
     - name: Build
       run: echo Hello, world!
     
