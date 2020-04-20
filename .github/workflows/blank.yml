@@ -58,5 +58,5 @@ jobs:
       with:
         name: Lib
         path: '${{github.workspace}}/TechProgCITemplate/lib'  
-    - run: tree
+    - run: find . test-report.xml
       
