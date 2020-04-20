@@ -43,4 +43,13 @@ jobs:
         echo test, and deploy your project.
     # Artifact uploading step
     - name: UploadArifacts
-      run: echo UploadArtifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: Bin
+        path: '${{github.workspace}}/TechProgCITemplate/bin'
+    - name: UploadArifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: Lib
+        path: '${{github.workspace}}/TechProgCITemplate/lib'  
+      
