@@ -30,7 +30,10 @@ jobs:
         ls
         cd 3rdparty
         ls
-        cd /home/runner/work/workflow-test/ci_build/../3rdparty/googletest
+        cd /home/runner/work/workflow-test/ci_build/../
+        echo '    '
+        echo ' Fuck  '
+        echo
         ls
     - name: Build
       run: echo Hello, world!
