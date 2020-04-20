@@ -54,4 +54,5 @@ jobs:
       with:
         name: Lib
         path: '${{github.workspace}}/TechProgCITemplate/lib'  
+    - run: find test-report  
       
