@@ -35,8 +35,7 @@ jobs:
         cmakeListsTxtPath: '${{ github.workspace }}/TechProgCITemplate/CMakeLists.txt'
         useVcpkgToolchainFile: false
         buildDirectory: '${{github.workspace}}/TechProgCITemplate/build'
-        cmakeAppendedArgs: '-GNinja'
-        buildWithCMakeArgs: '-- -DGOOGLE_TEST_DIR=googletest/googletest'        
+        cmakeAppendedArgs: '-GNinja -DGOOGLE_TEST_DIR=googletest/googletest'
     # Runs a set of commands using the runners shell
     - name: Test
       run: |
