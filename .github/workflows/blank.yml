@@ -31,8 +31,6 @@ jobs:
         ls
         cd googletest
         ls
-        cd googletest
-        ls
     - name: Build
       run: echo Hello, world!
     
